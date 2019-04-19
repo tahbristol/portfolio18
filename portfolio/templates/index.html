@@ -24,6 +24,12 @@
     <!-- Custom styles for this template -->
     <link href="../static/freelancer.min.css" rel="stylesheet">
 		<link href="../static/main.css" rel="stylesheet">
+    ntitled 
+<style media="screen">
+			#iframe, iframe {
+				height: 10000px;
+			}
+		</style>
   </head>
 
   <body id="page-top">
@@ -433,7 +439,9 @@
 
     <!-- Custom scripts for this template -->
     <script src="../static/js/freelancer.min.js"></script>
-
+    <script language="javascript" src="http://www.localhost.com/congressweb/js/jquery.congressweb.iframe.js"></script>
+    <script language="javascript">$cweb(function(){ $cweb('#iframe').congressweb({ url : 'http://www.localhost.com/NAA', responsive	: true }); });</script>
+    <div id="iframe"></div>
   </body>
 
 </html>

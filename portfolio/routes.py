@@ -14,10 +14,9 @@ def email():
 	msg['Subject'] = "From tahbristol.com"
 	msg['Name'] = form['name']
 	msg['From'] = form['email']
-	msg['Phone'] = form['phone']
 	msg['Content'] = form['message']
 
-	content = msg['From'] + "\n" + "Phone: " + msg['Phone'] + "\n" + "Message: " + msg['Content'] + "\n" + "Name: " + msg['Name']
+	content = msg['From'] + "\n" + "Message: " + msg['Content'] + "\n" + "Name: " + msg['Name']
 	
 	s = SMTP('smtp.gmail.com', 587)
 	s.ehlo()

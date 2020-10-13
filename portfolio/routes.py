@@ -10,7 +10,7 @@ def index():
 def email():
 	form = request.form
 
-	if len(form.extra) > 0:
+	if len(form['extra']) > 0:
 		return
 
 	msg = {}

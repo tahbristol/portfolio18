@@ -9,6 +9,10 @@ def index():
 @app.route('/email', methods=['POST'])
 def email():
 	form = request.form
+
+	if len(form.extra) > 0:
+		return
+
 	msg = {}
 	msg['To'] = "tahbristol@gmail.com"
 	msg['Subject'] = "From tahbristol.com"
